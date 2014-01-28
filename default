@@ -1,0 +1,44 @@
+# vim: ft=sh
+
+function ine() {
+	declare -f $1 &> /dev/null
+	[ "$?" -ne "0" ]
+}
+function isset() {
+	[ -z "$(eval echo \$$1)" ]
+}
+
+function ine_v() {
+	if isset $1; then
+		eval $1="$2"
+	fi
+}
+
+ine_v majorv ${version%.*}
+ine_v ext "tar.bz2"
+ine_v namecase "$name"
+ine_v url "http://www.xfce.org/"
+ine_v src "http://archive.xfce.org/src/apps/$namecase/$majorv/$namecase-$version.$ext"
+ine_v srcdir "$namecase-$version"
+if [ "$src" == "none" ]; then 
+	src=""
+	srcdir=""
+fi
+
+if ine installpkg; then
+	function configure() {
+		./configure \
+			--prefix=/usr \
+			--sysconfdir=/etc \
+			--libexecdir=/usr/lib/xfce4 \
+			--localstatedir=/var \
+			--disable-static \
+			--disable-debug
+	}
+fi
+
+if ine post_install; then
+	function post_install() {
+		update-desktop-database -q
+	}
+fi
