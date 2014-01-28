@@ -1,0 +1,9 @@
+# vim: ft=sh
+name="mousepad"
+iteration="1"
+version="0.3.0"
+desc="Simple text editor for Xfce"
+bdeps="gtksourceview2 dbus-glib"
+deps="$bdeps desktop-file-utils"
+arch="any"
+flags=""
