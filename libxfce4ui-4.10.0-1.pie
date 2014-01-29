@@ -1,0 +1,10 @@
+# vim: ft=sh
+name="libxfce4ui"
+iteration="1"
+version="4.10.0"
+desc="Commonly used Xfce widgets in Xfce applications"
+bdeps="gtk2 libxfce4util libsm"
+deps="gtk2 libxfce4util xfconf libsm"
+arch="any"
+flags=""
+folder=xfce

@@ -1,0 +1,10 @@
+# vim: ft=sh
+name="libxfce4util"
+iteration="1"
+version="4.10.1"
+desc="Basic utility non-GUI functions for XFCE"
+bdeps="pkg-config glib2 intltool"
+deps="glib2"
+arch="any"
+flags=""
+folder="xfce"

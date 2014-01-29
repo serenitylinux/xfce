@@ -1,0 +1,10 @@
+# vim: ft=sh
+name="xfce4-panel"
+iteration="1"
+version="4.10.1"
+desc="Xfce panel"
+deps="garcon libxfce4ui libwnck desktop-file-utils exo"
+bdeps="$deps intltool"
+arch="any"
+flags=""
+folder="xfce"

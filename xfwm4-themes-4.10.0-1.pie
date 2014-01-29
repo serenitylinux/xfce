@@ -1,0 +1,11 @@
+# vim: ft=sh
+name="xfwm4-themes"
+iteration="1"
+version="4.10.0"
+desc="Set of themes for xfwm4"
+bdeps="xfwm4"
+deps="xfwm4"
+arch="any"
+flags=""
+folder="art"
+

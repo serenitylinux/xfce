@@ -14,11 +14,12 @@ function ine_v() {
 	fi
 }
 
+ine_v folder apps
 ine_v majorv ${version%.*}
 ine_v ext "tar.bz2"
 ine_v namecase "$name"
 ine_v url "http://www.xfce.org/"
-ine_v src "http://archive.xfce.org/src/apps/$namecase/$majorv/$namecase-$version.$ext"
+ine_v src "http://archive.xfce.org/src/$folder/$name/$majorv/$namecase-$version.$ext"
 ine_v srcdir "$namecase-$version"
 if [ "$src" == "none" ]; then 
 	src=""

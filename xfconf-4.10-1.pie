@@ -1,0 +1,10 @@
+# vim: ft=sh
+name="xfconf"
+iteration="1"
+version="4.10.0"
+desc="Xfce configuration system"
+deps="dbus dbus-glib libxfce4util"
+bdeps="$deps intltool pkg-config"
+arch="any"
+flags=""
+folder="xfce"

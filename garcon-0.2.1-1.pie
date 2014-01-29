@@ -1,0 +1,10 @@
+# vim: ft=sh
+name="garcon"
+iteration="1"
+version="0.2.1"
+desc="Freedesktop.org menu implementation"
+bdeps="glib2 libxfce4util pkg-config intltool xfce4-dev-tools"
+deps="glib2 libxfce4util"
+arch="any"
+flags=""
+folder="xfce"

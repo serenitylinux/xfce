@@ -8,15 +8,3 @@ deps=""
 arch="any"
 flags=""
 
-
-function configure() {
-	default
-}
-
-function build() {
-	default
-}
-
-function installpkg() {
-	default
-}

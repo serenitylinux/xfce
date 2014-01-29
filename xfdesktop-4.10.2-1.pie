@@ -1,0 +1,10 @@
+# vim: ft=sh
+name="xfdesktop"
+iteration="1"
+version="4.10.2"
+desc="A desktop manager for Xfce"
+deps="libxfce4ui thunar garcon libwnck"
+bdeps="$deps intltool"
+arch="any"
+flags=""
+folder="xfce"
