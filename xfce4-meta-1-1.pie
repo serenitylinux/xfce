@@ -4,11 +4,11 @@ iteration="1"
 version="1"
 desc="Xfce4 meta package"
 bdeps=""
-deps="xfce4-session xfce4-terminal xfce4-panel xfce4-settings xfwm4 xfdektop thunar" 
+deps="xfce4-session xfce4-terminal xfce4-panel xfce4-settings xfwm4 xfdesktop thunar" 
 arch="any"
 flags=""
 url=""
-src=""
+src="none"
 srcdir=""
 
 configure() {
