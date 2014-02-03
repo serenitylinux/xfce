@@ -26,7 +26,7 @@ if [ "$src" == "none" ]; then
 	srcdir=""
 fi
 
-if ine installpkg; then
+if ine configure; then
 	function configure() {
 		./configure \
 			--prefix=/usr \
