@@ -6,9 +6,9 @@ desc="Xfce file manager"
 #libexif
 #exo
 #libnotify
-deps="desktop-file-utils gtk2 libxfce4util libxfce4ui libpng"
-bdeps="$deps intltool xfce4-panel"
-arch="any"
-flags=""
+deps=('desktop-file-utils' 'gtk2' 'libxfce4util' 'libxfce4ui' 'libpng')
+bdeps=('desktop-file-utils' 'gtk2' 'libxfce4util' 'libxfce4ui' 'libpng' 'intltool' 'xfce4-panel')
+arch=('any')
+flags=()
 folder="xfce"
 namecase="Thunar"

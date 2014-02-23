@@ -22,7 +22,7 @@ ine_v url "http://www.xfce.org/"
 ine_v src "http://archive.xfce.org/src/$folder/$name/$majorv/$namecase-$version.$ext"
 ine_v srcdir "$namecase-$version"
 if [ "$src" == "none" ]; then 
-	src=""
+src=()
 	srcdir=""
 fi
 

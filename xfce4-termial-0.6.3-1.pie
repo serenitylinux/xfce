@@ -3,9 +3,9 @@ name="xfce4-terminal"
 iteration="1"
 version="0.6.3"
 desc="Terminal emulator for the Xfce desktop environment"
-bdeps="intltool libxfce4ui vte"
-deps="libxfce4ui vte"
-arch="any"
-flags=""
+bdeps=('intltool' 'libxfce4ui' 'vte')
+deps=('libxfce4ui' 'vte')
+arch=('any')
+flags=()
 folder="apps" 
 
